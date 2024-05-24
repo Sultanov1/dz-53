@@ -8,9 +8,9 @@ interface TaskProps {
 
 const Task: React.FC<TaskProps> = ({ id, text, onDelete }) => {
   return (
-    <div>
+    <div className='task-container'>
       <span>{text}</span>
-      <button onClick={() => onDelete(id)}>Удалить</button>
+      <button className='delete-btn' onClick={() => onDelete(id)}>Удалить</button>
     </div>
   );
 };
